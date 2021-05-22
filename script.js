@@ -4,8 +4,7 @@ let ul = document.querySelector("ul");
 
 
 
-button.addEventListener("click", function (e) {
-
+function addList() {
     let todoList = document.createElement("li");
     let cancelButton = document.createElement("button");
     cancelButton.innerText = "X";
@@ -14,9 +13,9 @@ button.addEventListener("click", function (e) {
     todoList.append(input.value);
     todoList.append(cancelButton)
 
+
+
     ul.appendChild(todoList);
-
-
 
     cancelButton.addEventListener("click", function (e) {
         e.stopPropagation();
@@ -24,6 +23,17 @@ button.addEventListener("click", function (e) {
 
     })
 
+}
+
+
+button.addEventListener("click", function (e) {
+
+    if (input.value.length != 0)
+        addList();
+    else
+        alert("Por favor, escreva algo. ")
+
+    input.value = "";
 
 })
 
