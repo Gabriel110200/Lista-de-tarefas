@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:rgb(92, 159, 160); 
+    display:flex; 
+    flex-direction:column;
+    align-items:center; 
+    margin-top:30px;
+
+
+}  
+
+span{
+    margin-bottom:20px; 
+    color:white;
+}
+
+h1{
+    margin-bottom:30px; 
+    font-size:60px; 
+    font-family: 'Sacramento', cursive; 
+    text-align:center;
+} 
+
+
+.subtitles{
+    display:flex; 
+    flex-direction:column; 
+    width:80%;  
+    max-width:500px;
+    align-items:flex-start; 
+
+
+} 
+
+.subtitles span:nth-of-type(1){
+    color:rgb(236, 236, 96);
+} 
+
+.subtitles span:nth-of-type(2){
+    color:rgb(33, 223, 33);
+} 
+
+.subtitles span:nth-of-type(3){
+    color:rgb(150, 20, 20);
+}
+
+
+.inputDiv{ 
+    display:flex; 
+ 
+  
+    width:100%;
+    justify-content:center; 
+    margin-top:20px;
+} 
+
+
+input{
+   max-width:350px; 
+   width:100%; 
+   height:30px; 
+   border-radius: 5px;
+   border:none; 
+   padding-left:5px;  
+   margin-left:10px;
+   margin-right:2px; 
+   display:flex; 
+   
+
+} 
+
+button{
+    padding:3px 15px;  
+    background-color:rgb(187, 31, 31); 
+    color:white; 
+    cursor:pointer;  
+    
+    
+}  
+
+
+
+
+ul{
+  
+    width:100%;  
+    display:flex;
+    flex-direction: column; 
+    align-items:center; 
+    margin-top:25px; 
+    
+    
+}
+
+li{
+    color:black; 
+    background-color: rgb(130, 216, 219) ; 
+    border:1px solid black;
+    width:90%; 
+    padding:10px; 
+    border-radius:5px; 
+    box-shadow:1px 1px 2px black; /*   HEEEEEERE */   
+    margin-bottom:20px; 
+    cursor:pointer;   
+    display:flex;  
+    justify-content: space-between;
+    max-width:600px;
+
+
+} 
+
+li:hover{
+    background-color:rgb(109, 204, 14)
+}
+/*
+li:first-of-type:hover{
+    background-color: rgb(14, 204, 24);
+}*/ 
+
+@media(min-width:480px){ 
+
+    .subtitles{
+        align-items: center;
+    }
+
+}  
+
+@media(min-width:1300px){
+    li{
+        max-width:900px; 
+        font-size:20px;
+    } 
+
+   
+    input{
+        max-width:600px;
+    }
+}
